@@ -41,14 +41,8 @@ class Comments():
                 id = comment.get('id')
                 if id == comment_id:
                     self.comments.remove(comment)
-        elif author == self.author:
-            for comment in self.comments:
-                id = comment.get('id')
-                if id == comment_id:
-                    self.comments.remove(comment)
         else:
             return 'you are not authorized to perform this task'
-          
 
     def admin_edit_comment(self, author, edited_at, comment_id, content):
 
