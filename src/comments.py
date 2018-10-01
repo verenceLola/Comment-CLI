@@ -34,3 +34,21 @@ class Comments():
             }
         )
         return "Comment Added Successfully"
+
+    def admin_edit_comment(self, author, edited_at, comment_id, content):
+
+    		for comment in comments:
+    			if comment['comment_id']==comment_id:
+    				if comment['author'] !='admin':
+    					comment['content'] == content
+  						return self.comments
+  					return "Unauthirised"
+    			return "Couldn't find comment id"
+
+    def other_user_edit(self, author, edited_at, comment_id, content):
+
+    		for comment in comments:
+    			if comment['comment_id']==comment_id:
+    					comment['content'] == content
+  						return self.comments
+    			return "Couldn't find comment id"
