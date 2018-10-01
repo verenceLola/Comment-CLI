@@ -4,17 +4,16 @@
 class Comments():
     """define and configure the comments model"""
 
-    comments = []  # comments list
     def __init__(self, author, created_at, comment_id, content):
         self.author = author
         self.created_at = created_at
         self.comment_id = comment_id
         self.content = content
-        self.comment = {}  # comment item
+        self.comment = []  # comment item
 
     def admin_edit_comment(self, author, edited_at, comment_id, content):
 
-    		for comment in comments:
+    		for comment in self.comments:
     			if comment['comment_id']==comment_id:
     				if comment['author'] !='admin':
     					comment['content'] == content
