@@ -1,19 +1,12 @@
-from users import User
-import getpass
+# from src.users import User
+# import getpass
 
-username = input("Enter Your username..")
-password = getpass.getpass("Enter Your password..")
+# username = input("Enter Your username..")
+# password = getpass.getpass("Enter Your password..")
+# userdata = User(username,password)
 
+# def create_user():
+# 	userdata.save()
 
-def create_user():
-	userdata = User(username,password)
-	userdata.save()
-
-
-
-def login_user():
-	userdata = User(username,password)
-	userdata.login()
-
-create_user()
-login_user()
+# def login_user():
+# 	return userdata.login()
